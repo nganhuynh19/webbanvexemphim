@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <title>ĐẶT VÉ</title>
+    </head>
+    <body style="background:  linear-gradient(#0bf7b0,#66faff,#0bf7b0,  #66faff,#0bf7b0 );">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:yellow;">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="banvexemphim.html" style="color:yellow;"><span class="glyphicon glyphicon-film"></span></a>                   
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="banvexemphim.html"><strong>TRANG CHỦ</strong></a></li>
+                    <li><a href="#lichchieuchitiet"><strong>LỊCH CHIẾU</strong></a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>RẠP</strong><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="banvexemphim.html#rap">CGV</a></li>
+                                <li><a href="banvexemphim.html#rap">BHD Star</a></li>
+                                <li><a href="banvexemphim.html#rap">Galaxy Cinema</a></li>
+                            </ul>
+                    </li>        
+                    
+                    <li><a href="#lichchieuchitiet"><strong>MUA VÉ</strong></a></li>
+
+                   <li>
+                       <button type="button" class="btn btn-link btn-lg" data-toggle="collapse" data-target="#demo" style="margin-top:6px; color:#F06;">
+                           <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        <div id="demo" class="collapse" style="float:left;" >
+                            <input class="form-control" id="search" type="text" placeholder="Search.." style="margin-top: 10px" >
+                        </div>
+                    </li>
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><button type="button" class="btn btn-link btn-lg" data-toggle="modal" data-target="#myModaldk" style="color:#F06;"><span class="glyphicon glyphicon-user"></span></button></li>
+                    <li><button type="button" class="btn btn-link btn-lg" data-toggle="modal" data-target="#myModal" style="color:#F06;"><span class="glyphicon glyphicon-log-in"></span></button></li>
+                </ul>
+                </div>
+            </div>
+
+        </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <br>
+                <br>
+                <h1>TICKET DETAIL</h1>
+              <hr>
+                <div class="col-sm-4">
+                    <img src="img/OIP (2).jpg" class="img-responsive img-rounded image" style="width:65%; margin-top:35px; margin-left:64px;"/>
+                </div>
+                <div class="col-sm-8">
+                    <h2><strong>THE CONJURING: THE DEVIL MADE ME DO IT</strong></h2>
+                    <hr>
+                    <p><strong>NGÀY CHIẾU: </strong>29/12/2021</p>
+                    <p><strong>XUẤT CHIẾU: </strong>17:00-19:04</p>
+                    <p><strong>GIÁ VÉ: </strong>159.000đ</p>
+                    <p><strong>RẠP: </strong>CGV Saigonres Nguyễn Xí</p>
+                    <p><strong>ĐỊA CHỈ: </strong> Tầng 4-5, Saigonres Plaza, 79/81 Nguyễn Xí, P 26, Q Bình Thạnh</p>
+                    <br>
+                    <h4><strong>CHỌN CHỖ NGỒI</strong></h4>
+                    <button type="button" class="btn">1</button>
+                    <button type="button" class="btn">2</button>
+                    <button type="button" class="btn">3</button>
+                    <button type="button" class="btn">4</button>
+                    <button type="button" class="btn">5</button>
+                    <button type="button" class="btn">6</button>
+                    <button type="button" class="btn">7</button>
+                    <button type="button" class="btn">8</button>
+                    <button type="button" class="btn">9</button>
+                    <button type="button" class="btn">10</button>
+                    <button type="button" class="btn">11</button>
+                    <button type="button" class="btn">12</button>
+                    <button type="button" class="btn">13</button>
+                    <button type="button" class="btn">14</button>
+                    <button type="button" class="btn">15</button>
+                    <button type="button" class="btn">16</button>
+                    <button type="button" class="btn">17</button>
+                    <br>
+                        <h4><strong>Điền thông tin mua vé</strong></h4>                   
+                        <form action="ve.html">
+                            <div class="form-group">                         
+                            <input type="text" class="form-control" id="name" placeholder="Họ và Tên..." name="name">
+                            </div>
+                            <div class="form-group">                               
+                                    <input type="email" class="form-control" id="email" placeholder="Email..." name="email">
+                            </div>
+                            <div class="form-group">                         
+                            <input type="text" class="form-control" id="sdt" placeholder="Số điện thoại..." name="sdt">
+                            </div>
+                            <button type="submit" class="btn btn-primary">MUA VÉ</button>
+                        </form>
+                </div>
+            </div> 
+    </div>
+    <div class="col-sm-12 col-md-12" >
+
+        <br>
+
+        <br>
+
+        <hr>
+
+        <br>
+
+        <br>
+
+  
+    </div>
+          <!-- Modal DANG NHAP-->
+  <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content" >
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">ĐĂNG NHẬP</h4>
+            </div>
+            <div class="modal-body">
+              <form name="loginForm" method="POST">
+                   <div class="form-group">
+                        <input type="text" name="username" class ="form-control" placeholder="Enter Your Name"/>
+                   </div>                                          
+                   <div class="form-group">
+                         <input type="password" name="username" class ="form-control" placeholder="Enter Password"/>
+                   </div>                                 
+                  <button type="submit" class="btn btn-success pull-left" styte="margin-right:5px">ĐĂNG NHẬP</button> 
+                  
+                  
+                  <br><br>
+              </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-link btn-lg" data-toggle="modal" data-target="#myModaldk">ĐĂNG KÝ</button>
+            
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <!--KET THUC MODEL DANG NHAP -->
+
+      <!-- /////////////////Modal DANG KY-->
+  <div class="modal fade" id="myModaldk" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">ĐĂNG KÝ</h4>
+            </div>
+            <div class="modal-body">
+              <form name="loginForm" method="POST">
+                    <div class="form-group">
+                         <input type="text" name="username" class ="form-control" placeholder="Họ và Tên"/>
+                   </div>                                          
+                   <div class="form-group">
+                         <input type="email" name="username" class ="form-control" placeholder="Địa chỉ Email"/>
+                   </div>
+                   <div class="form-group">                         
+                        <input type="text" class="form-control" id="sdt" placeholder="Số điện thoại..." name="sdt">
+                    </div>
+                   <div class="form-group">
+                         <input type="password" name="username" class ="form-control" placeholder="Password"/>
+                   </div>
+                   <div class="form-group">
+                           <input type="password" name="username" class ="form-control" placeholder="Nhập lại Password"/>
+                   </div>
+                                                    
+                   <button type="submit" class="btn btn-success pull-left">ĐĂNG KÝ</button>   
+                   <br><br>
+             </form>
+            </div>
+            <div class="modal-footer">
+            
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+<!--/////////////////KET THUC MODEL DANG KY -->
+    </div>
+    
+    
+</body>
+<!-- FOOTER -->
+<footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-12" style="background-color:black;">
+                    <div class="col-sm-3 col-md-3">
+                       <h3><strong>GIỚI THIỆU</strong></h3> 
+                        <ul class="list-unstyled">
+                            <li>District 3, Hồ Chí Minh City</li>
+                            <li>Phone number: 0808.915.932</li>
+                        </ul>
+                        <strong>FANPAGE FACEBOOK</strong>
+                        
+                        <iframe
+                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs&width=280&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId"
+                        width="280" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                    
+                    <div class="col-sm-3 col-md-3">
+                           <h3><strong>GÓC ĐIỆN ẢNH</strong></h3>
+                           <ul class="list-unstyled">
+                                <li>Phim hay tháng</li>
+                                <li>Thể loại phim</li>
+                            </ul>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                            <h3><strong>HỖ TRỢ</strong></h3>
+                            <ul class="list-unstyled">
+                                    <li>Góp ý</li>
+                                    
+                                </ul>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                            <h3><strong >CHECK OUT</strong></h3> 
+                             <p>
+                                 <img src="img/paypal_com.png" alt="">
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>  
+    </html>

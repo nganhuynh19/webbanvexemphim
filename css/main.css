@@ -1,0 +1,42 @@
+.section-login{
+    min-height: 700px;
+    background:linear-gradient(#ffeee6,#ff66f2,#ffcccc,  #f7047d,black );
+}
+.section-register{
+    min-height: 1000px;
+    background: linear-gradient(#ffeee6,#ff66f2,#ffcccc,  #f7047d,black );
+}
+.form-background{
+    background: pink;
+    margin-top: 90px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    
+}
+.form-background > h3{
+    text-align: center;
+    margin-top :30px;
+}
+.form-item{
+    margin-bottom: 30px;
+}
+.forgotpw{
+    text-align: right;
+}
+.btn-login{
+    padding: 12px 38px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: black;
+    color : pink;
+    border: none;
+    outline: none;
+    display: table;
+    cursor: pointer;
+    margin: 15px auto 31px;
+}
+.user-register{
+    text-align: center;
+
+}

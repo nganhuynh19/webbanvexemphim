@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <title>ADMIN</title>
+        
+        
+    </head>
+    <body style="background-image: url('img/hinh-nen-mau-den-40.jpg');">
+        <h2 style="color:blue;">WELCOME ADMIN</h2>
+        <div class="container">
+            <div class="col-sm-12 col-md-12" style ="background-color: black; color:aqua; padding: 15px;" >                        
+                <div class="col-sm-3 col-md-3"  >
+                    <button type="button" class="btn btn-link btn-lg" data-toggle="modal" data-target="#dangphim" style="color:blue;text-decoration: none;"> 
+                        <span><strong>ĐĂNG PHIM MỚI</strong></span>
+                    </button>   
+                </div>
+                <div class="col-sm-3 col-md-3"  >
+                    <button type="button" class="btn btn-link btn-lg" data-toggle="modal" data-target="#danglichchieu" style="color:blue;text-decoration: none;"> 
+                        <span><strong>ĐĂNG LỊCH CHIẾU</strong></span>
+                    </button>                 
+                </div>
+                <div class="col-sm-3 col-md-3"  >
+                    <button type="button" class="btn btn-link btn-lg" data-toggle="modal" data-target="#dangsukien" style="color:blue;text-decoration: none;"> 
+                        <span><strong>KHUYẾN MÃI VÀ SỰ KIỆN</strong></span>
+                    </button>   
+                </div>
+                
+                <div class="col-sm-3 col-md-3"  >
+                    <button type="button" class="btn btn-link btn-lg" data-toggle="modal" data-target="#thongke" style="color:blue;text-decoration: none;"> 
+                        <span><strong>THỐNG KÊ DOANH SỐ</strong></span>
+                    </button>   
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="col-sm-12 col-md-12"  >
+                <h2 style="color:aqua;"><strong>DANH SÁCH PHIM</strong></h2>
+            <div class="panel-group" id="accordion">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="text-decoration: none;">THE CONJURING: THE DEVIL MADE ME DO IT 
+                        
+                            <img src="img/edit.png" data-toggle="modal" data-target="#myfilm" style="width:3%;">                      
+                            <img src="img/deletered.png" style="width:3%; ">
+                        </a>                        
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="col-sm-2 col-md-2">
+                                <img src="img/OIP (2).jpg" style="width:90%; margin-top:25px; ">
+                            </div>
+                            <div class="col-sm-10 col-md-10">
+                                    <h3><strong>THE CONJURING: THE DEVIL MADE ME DO IT</strong></h3>
+                                    <hr>
+                                    <p><strong>ĐẠO DIỄN: </strong>Michael Chaves</p>
+                                    <p><strong>DIỄN VIÊN: </strong>Vera Farmiga, Patrick Wilson, Sterling Jerins, Julian Hilliard</p>
+                                    <p><strong>THỂ LOẠI: </strong>Kinh dị</p>
+                                    <p><strong>NGÀY CÔNG CHIẾU : </strong>29/10/2021</p>
+                                    <h4>NỘI DUNG</h4>
+                                    <P>The Conjuring: The Devil Made Me Do It reveals a chilling story of terror, murder and unknown evil that shocked even experienced real-life paranormal investigators Ed and Lorraine Warren. 
+                                        One of the most sensational cases from their files, it starts with a fight for the soul of a young boy, then takes them beyond anything they’d ever seen before, 
+                                        to mark the first time in U.S. history that a murder suspect would claim demonic possession as a defense.
+                                    </P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                        <div class="panel-heading">
+                                <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="text-decoration: none;">VENOM 2
+                                    <img src="img/edit.png" style="width:3%;">
+                                    <img src="img/deletered.png" style="width:3%; ">
+                                </a>
+                                </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="col-sm-2 col-md-2">
+                                        <img src="img/photo-1-1629167215602568092074.jpg" style="width:90%; margin-top:25px; ">
+                                    </div>
+                                    <div class="col-sm-10 col-md-10">
+                                            <h3><strong>VENOM 2</strong></h3>
+                                            <hr>
+                                            <p><strong>ĐẠO DIỄN: </strong>Michael Chaves</p>
+                                            <p><strong>DIỄN VIÊN: </strong>Vera Farmiga, Patrick Wilson, Sterling Jerins, Julian Hilliard</p>
+                                            <p><strong>THỂ LOẠI: </strong>Kinh dị</p>
+                                            <p><strong>NGÀY CÔNG CHIẾU : </strong>29/10/2021</p>
+                                            <h4>NỘI DUNG</h4>
+                                            <P>The Conjuring: The Devil Made Me Do It reveals a chilling story of terror, murder and unknown evil that shocked even experienced real-life paranormal investigators Ed and Lorraine Warren. 
+                                                One of the most sensational cases from their files, it starts with a fight for the soul of a young boy, then takes them beyond anything they’d ever seen before, 
+                                                to mark the first time in U.S. history that a murder suspect would claim demonic possession as a defense.
+                                            </P>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="panel panel-default">
+                        <div class="panel-heading">
+                                <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="text-decoration: none;">AQUAMAN 2
+                                    <img src="img/edit.png" style="width:3%;">
+                                    <img src="img/deletered.png" style="width:3%; ">
+                                </a>
+                                </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="col-sm-2 col-md-2">
+                                        <img src="img/Aquaman-2.jpg" style="width:90%; margin-top:25px; ">
+                                    </div>
+                                    <div class="col-sm-10 col-md-10">
+                                            <h3><strong>AQUAMAN 2</strong></h3>
+                                            <hr>
+                                            <p><strong>ĐẠO DIỄN: </strong>Michael Chaves</p>
+                                            <p><strong>DIỄN VIÊN: </strong>Vera Farmiga, Patrick Wilson, Sterling Jerins, Julian Hilliard</p>
+                                            <p><strong>THỂ LOẠI: </strong>Kinh dị</p>
+                                            <p><strong>NGÀY CÔNG CHIẾU : </strong>29/10/2021</p>
+                                            <h4>NỘI DUNG</h4>
+                                            <P>The Conjuring: The Devil Made Me Do It reveals a chilling story of terror, murder and unknown evil that shocked even experienced real-life paranormal investigators Ed and Lorraine Warren. 
+                                                One of the most sensational cases from their files, it starts with a fight for the soul of a young boy, then takes them beyond anything they’d ever seen before, 
+                                                to mark the first time in U.S. history that a murder suspect would claim demonic possession as a defense.
+                                            </P>
+                                    </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" style="text-decoration: none;">BLACK WIDOW 
+                            <img src="img/edit.png" style="width:3%;">
+                            <img src="img/deletered.png" style="width:3%; ">
+                        </a>
+                        </h4>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="col-sm-2 col-md-2">
+                                <img src="img/1200x1800_1637308282912.jpg" style="width:90%; margin-top:25px; ">
+                            </div>
+                            <div class="col-sm-10 col-md-10">
+                                    <h3><strong>BLACK WIDOW </strong></h3>
+                                    <hr>
+                                    <p><strong>ĐẠO DIỄN: </strong>Michael Chaves</p>
+                                    <p><strong>DIỄN VIÊN: </strong>Vera Farmiga, Patrick Wilson, Sterling Jerins, Julian Hilliard</p>
+                                    <p><strong>THỂ LOẠI: </strong>Kinh dị</p>
+                                    <p><strong>NGÀY CÔNG CHIẾU : </strong>29/10/2021</p>
+                                    <h4>NỘI DUNG</h4>
+                                    <P>BLACK WIDOW : The Devil Made Me Do It reveals a chilling story of terror, murder and unknown evil that shocked even experienced real-life paranormal investigators Ed and Lorraine Warren. 
+                                        One of the most sensational cases from their files, it starts with a fight for the soul of a young boy, then takes them beyond anything they’d ever seen before, 
+                                        to mark the first time in U.S. history that a murder suspect would claim demonic possession as a defense.
+                                    </P>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div> 
+        </div> <!-- ket thuc container ds phim-->
+
+         <!-- Modal ĐĂNG PHIM-->
+  <div class="modal fade" id="dangphim" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content" >
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">THÊM LỊCH CHIẾU PHIM</h4>
+            </div>
+            <div class="modal-body">
+              <form name="loginForm" method="POST">
+                   <div class="form-group">
+                        <label>TÊN PHIM</label>
+                        <input type="text" name="tenphim" class ="form-control" placeholder="TÊN PHIM"/>
+                   </div>
+                   <div class="form-group">
+                        <label>HÌNH ẢNH</label>
+                        <input type="file" name="hinhanh"  />
+                    </div>
+                   <div class="form-group"> 
+                        <label>CỤM RẠP</label>              
+                        <select name="thelist">
+                        <option>CGV</option>
+                        <option>BHD STAR</option>
+                        <option>GALAXY CINEMA</option>
+                        </select> 
+                   </div>
+                   <div class="form-group">
+                        <label>XUẤT CHIẾU</label>     
+                        <input type="datetime-local" name="xuatchieu" class ="form-control"/>
+                   </div>
+                   <div class="form-group">
+                        <label>PHÒNG CHIẾU</label>              
+                        <select name="thelist">
+                        <option>2A</option>
+                        <option>3B</option>
+                        <option>4F</option>
+                        <option>5E</option>
+                        <option>6G</option>
+                        </select> 
+                   </div>                                         
+                   <div class="form-group">
+                       <label>NỘI DUNG PHIM</label>
+                         <input type="text" name="chuthich" class ="form-control" placeholder=""/>
+                   </div>                                 
+              </form>
+            </div>
+            <div class="modal-footer">        
+              <button type="button" class="btn btn-default btn-lg pull-left" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-default btn-lg " data-toggle="modal" data-target="#myModaldk">LƯU</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <!--/////////////////KET THUC MODEL ĐĂNG PHIM -->
+
+
+        <!-- Modal ĐĂNG LICH CHIEU-->
+  <div class="modal fade" id="danglichchieu" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" >
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">THÊM LỊCH CHIẾU PHIM</h4>
+        </div>
+        <div class="modal-body">
+          <form name="loginForm" method="POST">
+               <div class="form-group">
+                    <label>TÊN PHIM</label>
+                    <select name="tenphim">
+                        <option>THE CONJURING: THE DEVIL MADE ME DO IT</option>
+                        <option>VENOM 2</option>
+                        <option>AQUAMAN 2</option>
+                        <option>BLACK WIDOW</option>
+                    </select> 
+               </div>
+               <div class="form-group"> 
+                    <label>CỤM RẠP</label>              
+                    <select name="cumrap">
+                        <option>CGV</option>
+                        <option>BHD STAR</option>
+                        <option>GALAXY CINEMA</option>
+                    </select> 
+               </div>
+               <div class="form-group">
+                    <label>XUẤT CHIẾU</label>     
+                    <input type="datetime-local" name="xuatchieu" class ="form-control"/>
+               </div>
+               <div class="form-group">
+                    <label>PHÒNG CHIẾU</label>              
+                    <select name="thelist">
+                    <option>2A</option>
+                    <option>3B</option>
+                    <option>4F</option>
+                    <option>5E</option>
+                    <option>6G</option>
+                    </select> 
+               </div>                                         
+               <div class="form-group">
+                   <label>CHÚ THÍCH</label>
+                     <input type="text" name="chuthich" class ="form-control" placeholder="Chú thích..."/>
+               </div>                                 
+          </form>
+        </div>
+        <div class="modal-footer">        
+          <button type="button" class="btn btn-default btn-lg pull-left" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-default btn-lg " data-toggle="modal" data-target="#myModaldk">LƯU</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!--/////////////////KET THUC MODEL LICH CHIEU -->
+
+          <!-- ////MODEL SU KIEN -->
+          <div class="modal fade" id="dangsukien" role="dialog">
+            <div class="modal-dialog">
+            
+              <!-- Modal content-->
+              <div class="modal-content" >
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">ĐĂNG KHUYẾN MÃI VÀ SỰ KIỆN</h4>
+                </div>
+                <div class="modal-body">
+                  <form name="loginForm" method="POST">
+                       <div class="form-group">
+                            <label>TÊN SỰ KIỆN/KHUYẾN MÃI</label>
+                            <input type="text" name="tensk" class ="form-control" placeholder="TÊN SỰ KIỆN/KHUYẾN MÃI..."/>
+                       </div>
+                       <div class="form-group">
+                        <label>HÌNH ẢNH</label>
+                        <input type="file" name="hinhanh"  />
+                        </div>                                                          
+                       <div class="form-group">
+                            <label>NỘI DUNG</label>
+                             <input type="text" name="noidung" class ="form-control" placeholder="Nội dung..."/>
+                       </div>                                 
+                  </form>
+                </div>
+                <div class="modal-footer">        
+                  <button type="button" class="btn btn-default btn-lg pull-left" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-default btn-lg " data-toggle="modal" data-target="#">LƯU</button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <!--/////////////////KET THUC MODEL SU KIEN -->
+
+          <!-- ////MODEL THONG KE -->
+          <div class="modal fade" id="thongke" role="dialog">
+            <div class="modal-dialog">
+            
+              <!-- Modal content-->
+              <div class="modal-content" >
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">THỐNG KÊ DOANH THU</h4>
+                </div>
+                <div class="modal-body">
+                    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                </div>
+                <div class="modal-footer">        
+                  <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">Close</button>
+                  
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <!--/////////////////KET THUC MODEL THONG KE-->
+          <script>
+            var xValues = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November"];
+            var yValues = [55, 49, 44, 24, 15, 10, 9, 12, 15,30, 50];
+            var barColors = ["red", "green","blue","orange","brown","pink","yellow","aqua","purple","black","gray"];
+            
+            new Chart("myChart", {
+              type: "bar",
+              data: {
+                labels: xValues,
+                datasets: [{
+                  backgroundColor: barColors,
+                  data: yValues
+                }]
+              },
+              options: {
+                legend: {display: false},
+                title: {
+                  display: true,
+                  text: "THỐNG KÊ DOANH SỐ THEO THÁNG"
+                }
+              }
+            });
+            </script>
+    </body>
+</html>

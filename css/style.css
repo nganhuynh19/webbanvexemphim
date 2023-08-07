@@ -1,0 +1,243 @@
+/*banner*/
+.navbar{
+    background-color:#000;
+   
+}
+.navbar li a{
+    color: #F06 !important;
+}
+.navbar li a:hover{
+    color:aqua !important;
+}
+.dropdown-menu{
+    background-color: #000;
+   
+}
+.dropdown-menu ul li{
+    list-style-type: none;  
+}
+.dropdown .dropdown-menu a{
+    color:rgb(0, 255, 42) !important;
+}
+.dropdown .dropdown-menu a:hover{
+    color: skyblue !important;
+}
+.dropdown:hover .dropdown-menu{
+    display: inline-block; /*hiển thị danh sách đổ xuống khi hover*/
+}
+
+/*///*/
+/*zoom hinh*/
+.zoom:hover{
+    transform:scale(1.07);
+}
+/**/
+
+h2{
+    text-align: center;
+    color: #F06;
+    font-weight: bold;
+}
+/*hinh phim*/
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .zoom:hover .image {
+    opacity: 0.7;
+  }
+  
+  .zoom:hover .middle {
+    opacity: 1;
+  }
+  /**/
+ /*trailer*/ 
+  .video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+ * {
+     box-sizing: border-box;
+ }
+/*/// */            
+
+/*ds phim*/
+.column {
+    float: left;
+    width: 25%;
+    display: none; /* Hide all elements by default */
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: rgba(255, 255, 255, 0.748);
+    padding: 10px;
+  }
+  
+.show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  
+  .btn{
+      color:black;
+     
+  }
+  .btn:hover {
+    background-color: aquamarine;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: aqua;
+  }
+
+  /*////*/
+
+  /* len dau trang*/
+  #top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+   width: 3%;
+   height: auto;
+    cursor: pointer;
+  }
+  
+  /* quay ve trang chu*/
+  #quayve {
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    z-index: 99;
+   width: 3%;
+   height: auto;
+    cursor: pointer;
+  }
+
+/*slideshow su kien*/
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 9px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .columnsukien {
+    float: left;
+    width: 33.3%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+/*/////////*/

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <title>MOVIE</title>
+        
+    </head>
+    <body style="background:  linear-gradient(black, #ff000d, #ff66f2, #ffcccc, #ffeee6);">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:yellow;">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" style="color:yellow;"><span class="glyphicon glyphicon-film"></span></a>                   
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                        <li class="active"><a href="banvexemphim.html"><strong>TRANG CHỦ</strong></a></li>
+                        <li><a href="#lichchieu"><strong>LỊCH CHIẾU</strong></a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>RẠP</strong><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#rap">CGV</a></li>
+                                <li><a href="#rap">BHD Star</a></li>
+                                <li><a href="#rap">Galaxy Cinema</a></li>
+                            </ul>
+                    </li>        
+                    
+                    <li><a href="#lichchieu"><strong>MUA VÉ</strong></a></li>
+
+                   <li>
+                       <button type="button" class="btn btn-link btn-lg" data-toggle="collapse" data-target="#demo" style="margin-top:6px; color:#F06;">
+                           <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        <div id="demo" class="collapse" style="float:left;" >
+                            <input class="form-control" id="search" type="text" placeholder="Search.." style="margin-top: 10px" >
+                        </div>
+                    </li>
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li> <button type="button" class="btn btn-link btn-lg" data-toggle="modal" data-target="#myModaldk" style="color:#F06;"><span class="glyphicon glyphicon-user"></span></button></li>
+                    <li><button type="button" class="btn btn-link btn-lg" data-toggle="modal" data-target="#myModal" style="color:#F06;"><span class="glyphicon glyphicon-log-in"></span></button></li>
+                </ul>
+                </div>
+            </div>
+
+        </nav>
+
+        <!--carousel-->
+        <div class="container">
+            <br>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top: 15px;">
+                <!--Các phàn chỉ số-->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class ="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1" ></li>
+                    <li data-target="#myCarousel" data-slide-to="2" ></li>
+                    <li data-target="#myCarousel" data-slide-to="3" ></li>
+                </ol>
+
+                <!--Phần bao các slide-->
+                <div class="carousel-inner" role="listbox">
+                    
+                    <div class="item active">
+                            <img src="img/2048x682_1636015413733.jpg" alt=""  />
+                            <div class ="carousel-caption">
+                               <span></span>
+                            </div>
+                    </div>
+                    <div class="item ">
+                        <img src="img/2048x682_1635308768601.jpg" alt="" width="1200" height="200" />
+                    </div>
+                    <div class="item ">
+                            <img src="img/2048-chuan_1635498521914.jpg" alt="" width="1200" height="400"/>
+                            <div class ="carousel-caption">
+                                <h3></h3>
+                            </div>
+                    </div>
+                    <div class="item ">
+                        <img src="img/2048x682_1635136817820.jpg" alt="" width="1200" height="400"/>
+                        <div class ="carousel-caption">
+                            <h3></h3>
+                        </div>
+                </div>
+                </div>
+                <!--control trái phải-->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+ 
+        <div class="container" id="lichchieu">
+                   
+                    <div class="col-sm-12 col-md-12" style ="background-color: black; color:aqua;  padding: 15px;" >
+                       
+                       <div class="col-sm-2 col-md-2" style="margin-top:7px;">
+                            <span class="glyphicon glyphicon-film"></span>
+                           <strong>PHIM ĐANG CHIẾU</strong>
+                        </div>
+                       <div class="col-sm-10 col-md-10">
+                            <div id="myBtnContainer">
+                                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                                <button class="btn" onclick="filterSelection('Horror')"> Horror</button>
+                                <button class="btn" onclick="filterSelection('Romance')"> Romance</button>
+                                <button class="btn" onclick="filterSelection('Comedy')"> Comedy</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </br>
+                  
+                <div class="jumbotron">
+                        <div class ="row">
+                                <div class="col-md-12">
+                                   <div class="col-md-3 col-sm-6 column zoom Horror content" >
+                                           <img src="img/photo-1-1629167215602568092074.jpg" class="img-rounded image" />
+                                           <div class="middle">
+                                               <div class="text"><a href="chitietphim.html#lichchieuchitiet" >MUA VÉ</a></div>
+                                               <div class="chitiet"><a href="chitietphim.html">Chi tiết</a></div>
+                                           </div>
+                                   </div>
+                                            
+                                   <div class="col-md-3 col-sm-6 column zoom Romance content" >
+                                       <img src="img/R (1).jpg" class="img-rounded image"  />
+                                       <div class="middle">
+                                           <div class="text"><a href="chitietphim.html#lichchieuchitiet" >MUA VÉ</a></div>
+                                           <div class="chitiet"><a href="chitietphim.html">Chi tiết</a></div>
+                                       </div>
+                                   </div>
+                                   
+                                   <div class="col-md-3 col-sm-6 column zoom house content" >
+                                       <img src="img/OIP.jpg" class="img-responsive img-rounded image" />
+                                       <div class="middle">
+                                           <div class="text"><a href="chitietphim.html#lichchieuchitiet" >MUA VÉ</a></div>
+                                           <div class="chitiet"><a href="chitietphim.html">Chi tiết</a></div>
+                                       </div>
+                                   </div>
+                               
+                               
+                                   <div class="col-md-3 col-sm-6 column zoom  Comedy content" >
+                                       <img src="img/R (2).jpg" class="img-responsive img-rounded image"  />
+                                       <div class="middle">
+                                           <div class="text"><a href="chitietphim.html#lichchieuchitiet" >MUA VÉ</a></div>
+                                           <div class="chitiet"><a href="chitietphim.html">Chi tiết</a></div>
+                                       </div>
+                                   </div>
+                                </div>
+                        </div>
+                   
+                </div>
+                
+<!--/////////////////////////////////////////////////////////////-->
+                
+                    <div class="col-sm-12 col-md-12" style ="background-color: black; color:aqua; padding: 15px;" >
+                       <span class="glyphicon glyphicon-film"></span>
+                        <strong>PHIM SẮP CHIẾU</strong>
+                    </div>
+                    </br>
+                
+                    <div class="jumbotron">
+
+
+                            <div class="row">
+                                    <div class="col-sm-3 col-md-3 column zoom Comedy content">
+                                      <img src="img/photo-1-1629167215602568092074.jpg" alt="Snow" class="responsive img-rounded image" style="width:100%">
+                                      <div class="middle">
+                                            <div class="text"><a href="chitietphim.html#lichchieuchitiet" >Mua vé</a></div>
+                                            <div class="chitiet"><a href="chitietphim.html">Chi tiết</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-3 column zoom Horror content">
+                                            <img src="img/photo-1-1629167215602568092074.jpg" alt="Snow" class="responsive img-rounded image" style="width:100%">
+                                            <div class="middle">
+                                                  <div class="text"><a href="chitietphim.html#lichchieuchitiet" >Mua vé</a></div>
+                                                  <div class="chitiet"><a href="chitietphim.html">Chi tiết</a></div>
+                                              </div>
+                                          </div>
+                                          <div class="col-sm-3 col-md-3 column zoom Comedy content">
+                                                <img src="img/photo-1-1629167215602568092074.jpg" alt="Snow" class="responsive img-rounded image" style="width:100%">
+                                                <div class="middle">
+                                                      <div class="text"><a href="chitietphim.html#lichchieuchitiet" >Mua vé</a></div>
+                                                      <div class="chitiet"><a href="chitietphim.html">Chi tiết</a></div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-sm-3 col-md-3 column zoom Romance content" >
+                                                    <img src="img/photo-1-1629167215602568092074.jpg" alt="Snow" class="responsive img-rounded image" style="width:100%">
+                                                    <div class="middle">
+                                                          <div class="text"><a href="chitietphim.html#lichchieuchitiet" >Mua vé</a></div>
+                                                          <div class="chitiet"><a href="chitietphim.html">Chi tiết</a></div>
+                                                      </div>
+                                                  </div>
+
+
+
+
+
+                        
+                    </div>
+        </div>            
+   </div>             
+<!--  //////////////////////////////////////////RẠP -->                 
+<div class="container" id="rap">
+        <div class="col-sm-12 col-md-12" style ="background-color: black; color:aqua; padding: 15px;" >
+                <span class="glyphicon glyphicon-film"></span>
+                RẠP
+             </div>
+             </br>
+        <div class="jumbotron">
+
+    <div class="row">
+            
+        
+  <h2>RẠP CHIẾU PHIM</h2>
+  
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">CGV</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div class="col-sm-2 col-md-2">
+                <img src="img/528dc63c325e3186e8baf7fdbb6cc10b.png" style="width:50%">
+            </div>
+            <div class="col-sm-10 col-md-10">
+                <strong>CGV Saigonres Nguyễn Xí</strong><br>
+                Tầng 4-5, Saigonres Plaza, 79/81 Nguyễn Xí, P 26, Q Bình Thạnh
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">BHD STAR</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse  ">
+        <div class="panel-body">
+            <div class="col-sm-2 col-md-2">
+                <img src="img/R.png" style="width:50%">
+            </div>
+            <div class="col-sm-10 col-md-10">
+                <strong>BHD STAR Vincom Quang Trung</strong><br>
+                B1-Vincom QT, 190 Quang Trung, Gò Vấp
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">GALAXY CINEMA</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div class="col-sm-2 col-md-2">
+                <img src="img/galaxy-logo.png" style="width:70%">
+            </div>
+            <div class="col-sm-10 col-md-10">
+                <strong>GALAXY CINEMA</strong><br>
+                63A - Võ Văn Tần - Phường 6 - Quận 3, TP.Hồ Chí Minh
+            </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>   
+    </div>  
+</div>
+    <!-- Modal DANG NHAP-->
+  <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">ĐĂNG NHẬP</h4>
+            </div>
+            <div class="modal-body">
+              <form name="loginForm" method="POST">
+                   <div class="form-group">
+                        <input type="text" name="username" class ="form-control" placeholder="Enter Your Name"/>
+                   </div>                                          
+                   <div class="form-group">
+                         <input type="password" name="username" class ="form-control" placeholder="Enter Password"/>
+                   </div>                                 
+                  <button type="submit" class="btn btn-success pull-left" styte="margin-right:5px">ĐĂNG NHẬP</button> 
+                  
+                  
+                  <br><br>
+              </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-link btn-lg" data-toggle="modal" data-target="#myModaldk">ĐĂNG KÝ</button>
+            
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <!--/////////////////KET THUC MODEL DANG NHAP -->
+      <!-- Modal DANG KY-->
+  <div class="modal fade" id="myModaldk" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">ĐĂNG KÝ</h4>
+            </div>
+            <div class="modal-body">
+              <form name="loginForm" method="POST">
+                    <div class="form-group">
+                         <input type="text" name="username" class ="form-control" placeholder="Họ và Tên"/>
+                   </div>                                          
+                   <div class="form-group">
+                         <input type="email" name="username" class ="form-control" placeholder="Địa chỉ Email"/>
+                   </div> 
+                   <div class="form-group">
+                         <input type="password" name="username" class ="form-control" placeholder="Password"/>
+                   </div>
+                   <div class="form-group">
+                           <input type="password" name="username" class ="form-control" placeholder="Nhập lại Password"/>
+                   </div>
+                                                    
+                   <button type="submit" class="btn btn-success pull-left">ĐĂNG KÝ</button>   
+                   <br><br>
+             </form>
+            </div>
+            <div class="modal-footer">
+            
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+<!--/////////////////KET THUC MODEL DANG KY -->
+       
+     <!--///////////////loc the loai///////////-->  
+
+       <script>
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("column");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        
+        
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
+        
+      
+    </body>
+
+<!-- FOOTER -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-12" style="background-color:black;">
+                    <div class="col-sm-3 col-md-3">
+                       <h3><strong>GIỚI THIỆU</strong></h3> 
+                        <ul class="list-unstyled">
+                            <li>District 3, Hồ Chí Minh City</li>
+                            <li>Phone number: 0808.915.932</li>
+                        </ul>
+                        <strong>FANPAGE FACEBOOK</strong>
+                        
+                        <iframe
+                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs&width=280&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId"
+                        width="280" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                    
+                    <div class="col-sm-3 col-md-3">
+                           <h3><strong>GÓC ĐIỆN ẢNH</strong></h3>
+                           <ul class="list-unstyled">
+                                <li>Phim hay tháng</li>
+                                <li>Thể loại phim</li>
+                            </ul>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                            <h3><strong>HỖ TRỢ</strong></h3>
+                            <ul class="list-unstyled">
+                                    <li>Góp ý</li>
+                                    
+                                </ul>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                            <h3><strong >CHECK OUT</strong></h3> 
+                             <p>
+                                 <img src="img/paypal_com.png" alt="">
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>    
+  
+</html>
